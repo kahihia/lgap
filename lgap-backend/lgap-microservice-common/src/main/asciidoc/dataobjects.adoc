@@ -1,0 +1,47 @@
+= Cheatsheets
+
+[[AdminSessionUser]]
+== AdminSessionUser
+
+++++
+++++
+'''
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[principal]]`principal`|`Json object`|-
+|[[emailAddress]]`emailAddress`|`String`|-
+|===
+
+[[BaseSessionUser]]
+== BaseSessionUser
+
+++++
+++++
+'''
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[principal]]`principal`|`Json object`|-
+|[[emailAddress]]`emailAddress`|`String`|-
+|===
+
+[[CustomerSessionUser]]
+== CustomerSessionUser
+
+++++
+++++
+'''
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[principal]]`principal`|`Json object`|-
+|[[emailAddress]]`emailAddress`|`String`|-
+|===
+

@@ -1,0 +1,143 @@
+= Cheatsheets
+
+[[Auction]]
+== Auction
+
+++++
+++++
+'''
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[auctionPhase]]`auctionPhase`|`link:enums.html#AuctionPhase[AuctionPhase]`|-
+|[[auctionType]]`auctionType`|`link:enums.html#AuctionType[AuctionType]`|-
+|[[description]]`description`|`String`|-
+|[[endTimestamp]]`endTimestamp`|`Number (Long)`|
++++
+
++++
+|[[id]]`id`|`Number (Long)`|-
+|[[name]]`name`|`String`|-
+|[[regions]]`regions`|`Array of link:enums.html#UserRegion[UserRegion]`|-
+|[[reservePrice]]`reservePrice`|`Number (Double)`|-
+|[[startTimestamp]]`startTimestamp`|`Number (Long)`|
++++
+
++++
+|===
+
+[[AuctionManager]]
+== AuctionManager
+
+++++
+++++
+'''
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`id`|`Number (Long)`|-
+|[[name]]`name`|`String`|-
+|===
+
+[[Bid]]
+== Bid
+
+++++
+++++
+'''
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[auctionId]]`auctionId`|`Number (Long)`|-
+|[[bid]]`bid`|`Number (Double)`|-
+|[[bidTimestamp]]`bidTimestamp`|`Number (Long)`|
++++
+
++++
+|[[extCustomerId]]`extCustomerId`|`Number (Long)`|-
+|[[id]]`id`|`Number (Long)`|-
+|===
+
+[[Cargo]]
+== Cargo
+
+++++
+++++
+'''
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[expectedDeliveryDays]]`expectedDeliveryDays`|`Number (Integer)`|-
+|[[extProductId]]`extProductId`|`Number (Long)`|-
+|[[id]]`id`|`Number (Long)`|-
+|[[location]]`location`|`String`|-
+|[[quantity]]`quantity`|`Number (Double)`|-
+|===
+
+[[DutchAuction]]
+== DutchAuction
+
+++++
+++++
+'''
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[auctionPhase]]`auctionPhase`|`link:enums.html#AuctionPhase[AuctionPhase]`|-
+|[[auctionType]]`auctionType`|`link:enums.html#AuctionType[AuctionType]`|-
+|[[basePrice]]`basePrice`|`Number (Double)`|-
+|[[cargo]]`cargo`|`link:dataobjects.html#Cargo[Cargo]`|-
+|[[description]]`description`|`String`|-
+|[[endTimestamp]]`endTimestamp`|`Number (Long)`|
++++
+
++++
+|[[id]]`id`|`Number (Long)`|-
+|[[name]]`name`|`String`|-
+|[[priceModifier]]`priceModifier`|`Number (Double)`|-
+|[[regions]]`regions`|`Array of link:enums.html#UserRegion[UserRegion]`|-
+|[[reservePrice]]`reservePrice`|`Number (Double)`|-
+|[[startTimestamp]]`startTimestamp`|`Number (Long)`|
++++
+
++++
+|[[turns]]`turns`|`Array of link:dataobjects.html#DutchAuctionTurn[DutchAuctionTurn]`|-
+|===
+
+[[DutchAuctionTurn]]
+== DutchAuctionTurn
+
+++++
+++++
+'''
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[auction]]`auction`|`link:dataobjects.html#DutchAuction[DutchAuction]`|-
+|[[endTimestamp]]`endTimestamp`|`Number (Long)`|
++++
+
++++
+|[[finished]]`finished`|`Boolean`|-
+|[[id]]`id`|`Number (Long)`|-
+|[[startTimestamp]]`startTimestamp`|`Number (Long)`|
++++
+
++++
+|[[started]]`started`|`Boolean`|-
+|[[turnDuration]]`turnDuration`|`Number (Long)`|-
+|[[turnNumber]]`turnNumber`|`Number (Integer)`|-
+|===
+

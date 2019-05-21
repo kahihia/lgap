@@ -1,0 +1,25 @@
+{
+  "api": {
+    "service.name": "service-http-api-gateway",
+    "http.address": "127.0.0.1",
+    "http.port": 443,
+    "http.ssl": true,
+    "http.ssl.certificate": {
+      "jks.file": "config/common/https/keystore.jks",
+      "jks.password": "lgaphttps"
+    }
+  },
+  "circuit.breaker": {
+    "name": "lgap-api-circuit-breaker",
+    "max.failures": 5,
+    "timeout": 30000,
+    "reset.timeout": 10000,
+    "fallback.on.failure": true
+  },
+  "jwt.auth.provider": {
+    "keystore.file": "config/common/jwt/keystore.jceks",
+    "keystore.type": "jceks",
+    "keystore.algorithm": "HS256",
+    "keystore.password": "lgapApi"
+  }
+}

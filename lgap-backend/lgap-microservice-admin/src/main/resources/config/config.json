@@ -1,0 +1,40 @@
+{
+  "web": {
+    "service.name": "service-http-web-admin",
+    "http.address": "127.0.0.1",
+    "http.port": 9999,
+    "http.ssl": false,
+    "metadata": {
+      "endpoint.name": "admin",
+      "endpoint.type": "web"
+    }
+  },
+  "api": {
+    "service.name": "service-http-api-admin",
+    "http.address": "127.0.0.1",
+    "http.port": 9994,
+    "http.ssl": false,
+    "metadata": {
+      "endpoint.name": "admin",
+      "endpoint.type": "api"
+    }
+  },
+  "jwt.auth.provider": {
+    "keystore.file": "config/common/jwt/keystore.jceks",
+    "keystore.type": "jceks",
+    "keystore.algorithm": "HS256",
+    "keystore.password": "lgapApi"
+  },
+  "encryption": {
+    "encoding": "UTF-8",
+    "algorithm": "SHA-256",
+    "salt": "admin-pw-salt-example"
+  },
+  "data.source": {
+    "url": "jdbc:mysql://localhost:3306/lgap-admin?characterEncoding=UTF-8&useSSL=false",
+    "driver_class": "com.mysql.cj.jdbc.Driver",
+    "user": "lgapUser",
+    "password": "lgap",
+    "max_pool_size": 30
+  }
+}

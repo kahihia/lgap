@@ -1,0 +1,26 @@
+{
+  "api": {
+    "service.name": "service-http-api-product",
+    "http.address": "127.0.0.1",
+    "http.port": 9992,
+    "http.ssl": false,
+    "metadata": {
+      "endpoint.name": "product",
+      "endpoint.type": "api",
+      "endpoint.auth.service.address": ""
+    }
+  },
+  "jwt.auth.provider": {
+    "keystore.file": "config/common/jwt/keystore.jceks",
+    "keystore.type": "jceks",
+    "keystore.algorithm": "HS256",
+    "keystore.password": "lgapApi"
+  },
+  "data.source": {
+    "url": "jdbc:mysql://localhost:3306/lgap-product?characterEncoding=UTF-8&useSSL=false",
+    "driver_class": "com.mysql.cj.jdbc.Driver",
+    "user": "lgapUser",
+    "password": "lgap",
+    "max_pool_size": 30
+  }
+}

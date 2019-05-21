@@ -1,0 +1,21 @@
+= Cheatsheets
+
+[[Admin]]
+== Admin
+
+++++
+++++
+'''
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[email]]`email`|`String`|-
+|[[firstName]]`firstName`|`String`|-
+|[[id]]`id`|`Number (Long)`|-
+|[[lastName]]`lastName`|`String`|-
+|[[password]]`password`|`String`|-
+|[[userName]]`userName`|`String`|-
+|===
+

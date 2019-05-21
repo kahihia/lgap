@@ -1,0 +1,35 @@
+{
+  "web": {
+    "service.name": "service-http-web-customer",
+    "http.address": "127.0.0.1",
+    "http.port": 9998,
+    "http.ssl": false,
+    "metadata": {
+      "endpoint.name": "customer",
+      "endpoint.type": "web"
+    }
+  },
+  "api": {
+    "service.name": "service-http-api-customer",
+    "http.address": "127.0.0.1",
+    "http.port": 9993,
+    "http.ssl": false,
+    "metadata": {
+      "endpoint.name": "customer",
+      "endpoint.type": "api"
+    }
+  },
+  "jwt.auth.provider": {
+    "keystore.file": "config/common/jwt/keystore.jceks",
+    "keystore.type": "jceks",
+    "keystore.algorithm": "HS256",
+    "keystore.password": "lgapApi"
+  },
+  "lenzing.customer.portal": {
+    "http.host": "lenzing-portal.herokuapp.com",
+    "http.port": 80,
+    "request.uri.signIn": "/users/sign_in",
+    "request.uri.user.profile": "/profile",
+    "request.uri.user.regions": "/regions"
+  }
+}

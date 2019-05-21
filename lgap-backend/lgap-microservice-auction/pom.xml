@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>lgap-backend</artifactId>
+        <groupId>edu.lenzing.lgap</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>lgap-microservice-auction</artifactId>
+
+    <name>LGAP Auction Microservice</name>
+    <description>Lenzing Global Auction Portal - Vert.x auction microservice</description>
+
+    <properties>
+        <main.verticle>edu.lenzing.lgap.microservice.auction.AuctionMicroserviceVerticle</main.verticle>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>edu.lenzing.lgap</groupId>
+            <artifactId>lgap-microservice-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>edu.lenzing.lgap</groupId>
+            <artifactId>lgap-launcher</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

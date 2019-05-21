@@ -1,0 +1,17 @@
+= Cheatsheets
+
+[[Customer]]
+== Customer
+
+++++
+++++
+'''
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`id`|`Number (Long)`|-
+|[[portalId]]`portalId`|`String`|-
+|===
+
